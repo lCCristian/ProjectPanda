@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/walpaper"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Project Panda"
+        android:textColor="#FFEB3B"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:text="Create New Account"-->
+<!--        android:textColor="#F7F7F8"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/fullName"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:background="@android:color/black"-->
+<!--        android:ems="10"-->
+<!--        android:hint="Full Name"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHint="#FFFFFF"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView2"-->
+<!--        app:layout_constraintVertical_bias="0.13999999" />-->
+
+    <!--EditText: Input Email-->
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:background="@android:color/black"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwordET"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:background="@android:color/black"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailET" />
+<!--    <EditText-->
+<!--        android:id="@+id/phone"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPhonetic"-->
+<!--        android:hint="Phone"-->
+<!--        android:background="@android:color/black"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textColorHint="#FFFFFF"-->
+<!--        android:textSize="14sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/password" />-->
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="Register"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordET" />
+
+    <TextView
+        android:id="@+id/registerTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Already Registered ? Login Here"
+        android:textColor="#FFEB3B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerBtn" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerTV"
+        app:layout_constraintVertical_bias="0.238" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    tools:context=".LoginActivity">-->
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:fillViewport="true">-->
+
+<!--        <RelativeLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
+
+<!--            <ImageView-->
+
+<!--                android:id="@+id/imageView"-->
+<!--                android:layout_width="200dp"-->
+<!--                android:layout_height="200dp"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_marginStart="@dimen/grid_2x"-->
+<!--                android:layout_marginLeft="@dimen/grid_2x"-->
+<!--                android:layout_marginTop="@dimen/grid_2x"-->
+<!--                android:layout_marginEnd="@dimen/grid_2x"-->
+<!--                android:layout_marginRight="@dimen/grid_2x"-->
+<!--                android:layout_marginBottom="@dimen/grid_2x"-->
+<!--                android:src="@drawable/cute_panda" />-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/emailTIL"-->
+<!--                android:layout_width="@dimen/standard_width"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/imageView"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_margin="@dimen/grid_2x">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/emailET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="textEmailAddress"-->
+<!--                    android:hint="@string/hint_email"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <com.google.android.material.textfield.TextInputLayout-->
+<!--                android:id="@+id/passwordTIL"-->
+<!--                android:layout_width="@dimen/standard_width"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/emailTIL"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:layout_margin="@dimen/grid_2x">-->
+
+<!--                <com.google.android.material.textfield.TextInputEditText-->
+<!--                    android:id="@+id/passwordET"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:inputType="textPassword"-->
+<!--                    android:hint="@string/hint_password"/>-->
+<!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--            <Button-->
+<!--                android:id="@+id/buttonSignup"-->
+<!--                android:layout_width="@dimen/standard_width"-->
+<!--                android:layout_height="@dimen/standard_height"-->
+<!--                android:layout_below="@id/passwordTIL"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                style="@style/StandardButton"-->
+<!--                android:text="@string/text_button_signup"-->
+<!--                android:layout_margin="@dimen/grid_2x"/>-->
+
+
+
+<!--            <TextView-->
+<!--                android:id="@+id/loginTV"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@+id/buttonSignup"-->
+<!--                android:layout_centerHorizontal="true"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                style="@style/LinkText"-->
+<!--                android:text="@string/text_login"/>-->
+<!--        </RelativeLayout>-->
+
+
+
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/loginProgressLayout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:background="@color/transparentGrey"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:visibility="gone">-->
+
+<!--        <ProgressBar-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content" />-->
+
+<!--    </LinearLayout>-->
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->

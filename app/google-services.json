@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "631033326309",
+    "firebase_url": "https://projectpanda-e12e2.firebaseio.com",
+    "project_id": "projectpanda-e12e2",
+    "storage_bucket": "projectpanda-e12e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:631033326309:android:d6d197800533598b22020c",
+        "android_client_info": {
+          "package_name": "com.example.projectpanda"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "631033326309-rsgqmrcmvt11c85oo722sujded05a11d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projectpanda",
+            "certificate_hash": "e5cba199da1d1f284c99a78662cc9f70c49e87a8"
+          }
+        },
+        {
+          "client_id": "631033326309-ftlp2cq2l7bnvlf1q4n4n8tsdsb2mpos.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_zM1FeircP_U70JTsKvbBi8eyjXyjnHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "631033326309-ftlp2cq2l7bnvlf1q4n4n8tsdsb2mpos.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

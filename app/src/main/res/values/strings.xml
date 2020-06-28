@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ProjectPanda</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="button_Login">Login</string>
+    <string name="text_signup">No account ? Go to SignUp !</string>
+    <string name="text_button_signup">SignUp</string>
+    <string name="text_login">Already have an account ? Log in !</string>
+    <string name="map_key" translatable="false">AIzaSyBjHZb1ZwwXUHQ_Lrd2K_xC4Ml1qyFCSC4</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
