@@ -4,33 +4,43 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
 
     ImageView imageView;
-
+    private static int TIME_OUT = 2000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_splash);
+            setContentView(R.layout.activity_splash);
             imageView = findViewById(R.id.imageView);
 
-            imageView.setOnClickListener(new View.OnClickListener() {
+            new Handler().postDelayed(new Runnable() {
                 @Override
-                public void onClick(View v) {
-                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-                    startActivity(intent);
+                public void run() {
+                    Intent i = new Intent(SplashActivity.this,LoginActivity.class);
+                    startActivity(i);
+                    finish();
                 }
-            });
+            },TIME_OUT);
+
+        }
+//            imageView.setOnClickListener(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+//                    startActivity(intent);
+//                }
+//            });
 
     }
 
 
-}
+
 
 
 
