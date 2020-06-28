@@ -101,6 +101,10 @@ public class HomeFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         //inflating menu
         inflater.inflate(R.menu.menu_main, menu);
+
+        //hide search icon from this fragment
+        menu.findItem(R.id.action_search).setVisible(false);
+
         super.onCreateOptionsMenu(menu, inflater);
     }
     //handle menu item clicks
@@ -123,6 +127,9 @@ public class HomeFragment extends Fragment {
         }else if (id == R.id.action_live){
             Intent openLive = new Intent(getActivity(),LiveActivity.class);
             startActivity(openLive);
+        }else if (id == R.id.action_add){
+            Intent openPost = new Intent(getActivity(),AddPostActivity.class);
+            startActivity(openPost);
         }
         return super.onOptionsItemSelected(item);
     }

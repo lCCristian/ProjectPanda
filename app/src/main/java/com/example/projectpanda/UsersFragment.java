@@ -234,6 +234,9 @@ public class UsersFragment extends Fragment {
         //inflating menu
         inflater.inflate(R.menu.menu_main, menu);
 
+        //hide add icon from this fragment
+        menu.findItem(R.id.action_add).setVisible(false);
+
         //Search view
         MenuItem item = menu.findItem(R.id.action_search);
         final SearchView searchView = (SearchView) MenuItemCompat.getActionView(item);
@@ -297,6 +300,9 @@ public class UsersFragment extends Fragment {
         }else if (id == R.id.action_live){
             Intent openLive = new Intent(getActivity(),LiveActivity.class);
             startActivity(openLive);
+        }else if (id == R.id.action_add){
+            Intent openPost = new Intent(getActivity(),AddPostActivity.class);
+            startActivity(openPost);
         }
         return super.onOptionsItemSelected(item);
     }

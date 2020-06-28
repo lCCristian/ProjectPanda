@@ -402,7 +402,7 @@ public class ProfileFragment extends Fragment {
 
                 //PICKING FROM gallery, FIRST CHECK IF STORAGE PERMISIONS ARE ALLOWED
                 if (grantResults.length > 0) {
-                    boolean writeStorageAccepted = grantResults[1] == PackageManager.PERMISSION_GRANTED;
+                    boolean writeStorageAccepted = grantResults[0] == PackageManager.PERMISSION_GRANTED;
                     if (writeStorageAccepted) {
                         //permissions enabled
                         pickFromGallery();
@@ -575,6 +575,11 @@ public class ProfileFragment extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         //inflating menu
         inflater.inflate(R.menu.menu_main, menu);
+
+        //hide add icon from this fragment
+        menu.findItem(R.id.action_add).setVisible(false);
+        menu.findItem(R.id.action_search).setVisible(false);
+
         super.onCreateOptionsMenu(menu, inflater);
     }
     //handle menu item clicks
@@ -597,6 +602,9 @@ public class ProfileFragment extends Fragment {
         }else if (id == R.id.action_live){
             Intent openLive = new Intent(getActivity(),LiveActivity.class);
             startActivity(openLive);
+        }else if (id == R.id.action_add){
+            Intent openPost = new Intent(getActivity(),AddPostActivity.class);
+            startActivity(openPost);
         }
         return super.onOptionsItemSelected(item);
     }
