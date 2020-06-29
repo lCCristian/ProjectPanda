@@ -29,13 +29,7 @@ public class SplashActivity extends AppCompatActivity {
             },TIME_OUT);
 
         }
-//            imageView.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
-//                    startActivity(intent);
-//                }
-//            });
+
 
     }
 
